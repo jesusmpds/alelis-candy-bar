@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    font-family: $main-font;
+    @media (max-width: 768px) {
+        font-size: calc(0.80rem + 1vmin)
+    }
+}
+
+
+.btn-primary{
+    background-color:$bluey-grey;
+    border-color:$bluey-grey;
+    border-radius: 4px;
+    padding: 16px 24px;
+    text-decoration: none;
+    box-shadow: $light-shadow;
+    transition: padding 0.5s ease-out;
+
+    
+    &:hover{
+        background-color:$bluey-grey;
+        border-color:$bluey-grey;
+        padding: 14px 20px;
+        box-shadow: $light-shadow;
+
+    }
+    &:focus,&:active{
+        background-color:$bluey-grey;
+        border-color:$bluey-grey;
+        padding: 14px 20px;
+        box-shadow: $light-shadow;
+
+    }
+}

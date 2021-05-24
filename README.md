@@ -1,2 +1,2 @@
 # alelis-candy-bar
-Bakery website
+Bakery website created using HTML, SASS, and Vainilla Javascript.
