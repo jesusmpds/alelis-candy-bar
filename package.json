@@ -5,11 +5,13 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jesus M",
   "license": "ISC",
   "dependencies": {
-    "node-modules": "^1.0.1"
+    "node-modules": "^1.0.1",
+    "autoprefixer": "^9.7.1",
+    "postcss-cli": "^6.1.3"
+
   }
 }
