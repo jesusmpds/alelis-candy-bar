@@ -3,13 +3,24 @@ html {
 }
 
 body {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: $main-font;
     @media (max-width: 768px) {
         font-size: calc(0.80rem + 1vmin)
     }
 }
 
+h1,h2{
+    font-size: 3.5rem;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .btn-primary{
     background-color:$bluey-grey;
@@ -35,4 +46,11 @@ body {
         box-shadow: $light-shadow;
 
     }
+}
+
+// Sobre Alelis section
+
+.img--background-alelis{
+    background-image: url(../images/Sobre-Alelis-Img-3.svg);
+    background-size: cover;
 }
