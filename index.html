@@ -24,13 +24,23 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                             Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Alfajores <span class="d-block">de maicena</span></a></li>
+                            <li><a class="dropdown-item" href="#">Budines</a></li>
+                            <li><a class="dropdown-item" href="#">Cookies</a></li>
+                            <li><a class="dropdown-item" href="#">Cupcakes</a></li>
+                            <li><a class="dropdown-item" href="#">Oreopops</a></li>
+                            <li><a class="dropdown-item" href="#">Tartas</a></li>
+                            <li><a class="dropdown-item" href="#">Tortas ➥</a>
+                                <ul class="submenu dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <li><a class="dropdown-item" href="#">Torta browni</a>
+                                    <li><a class="dropdown-item" href="#">Tortas decoradas</a>
+                                    <li><a class="dropdown-item" href="#">Torta rogel</a>
+                                </ul>
+                            </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -42,6 +52,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">¿Cómo comprar?</a>
                         </li>
+                        <li>
+                            <i><img src="./images/Cart.svg"></i>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -51,6 +64,7 @@
         <section id="hero">
             <div id="heroBackground" class="d-flex justify-content-center align-items-center">
                 <div class="container d-flex flex-column mb-5">
+                    <h1 class="visually-hidden">Alelis Pastelería consciente para festejar</h1>
                     <img src="images/AlelisHero.svg" class="img-fluid" alt="Alelis pasteleria consciente">
                     <div class="d-flex justify-content-evenly mt-5">
                         <a class="btn btn-primary" href="#" role="button">Arma tu presupuesto</a>
@@ -59,8 +73,42 @@
                 </div>
             </div>  
         </section>
+        <section id ="aboutUs" class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="mb-4">Sobre Alelis</h2>
+                    <p class="h2">
+                        Alelis es un negocio familiar,  que tiene por objetivo generar dulces recuerdos de una forma original, dándole a la fiesta un momento  único, dulce e irrepetible.
+                    </p>
+                    <p>
+                        Alelis surge el 1 de Octubre de 2018, de la mano de la creadora, la Chef profesional Pastelera y Organizadora de Eventos Alejandra Elisabeth, bajo el nombre: Tu Dulce Momento Candy Bar.
+                    </p>
+                    <p>
+                        Luego, en Marzo de 2020, se cambia el nombre a Alelis, haciendo alusión, por la pronunciación de la combinación de ambos nombres, a la planta de Alhelí, cuyas flores simbolizan la fidelidad en los tiempos más complicados como así también la belleza de lo que perdura, dándonos un rumbo como negocio: garantizar un espacio donde todos se sientan bienvenidos, sabiendo que todos somos iguales y que tenemos la misma posibilidad de festejar, también recordándonos nuestro compromiso con las prácticas libre de crueldad animal.
+
+                    </p>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="row mb-4">
+                                <img src="images/Sobre-Alelis-Img-1.svg">
+                            </div>
+                            <div class="row">
+                                <img src="images/Sobre-Alelis-Img-2.svg">
+                            </div>
+                        </div>
+                        <div class="col-6 img--background-alelis">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
     </main> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
 
