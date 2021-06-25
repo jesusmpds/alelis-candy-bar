@@ -1,25 +1,47 @@
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    font-size: 1.5rem;
+    body{
+    font-size: 16px;
     font-family: $main-font;
-    @media (max-width: 768px) {
-        font-size: calc(0.80rem + 1vmin)
+    @media screen and (max-width: 900px) {
+         font-size: 15px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 14px;
+      }
     }
 }
+  
+/* Modules will scale with document */
+header {
+font-size: 1.5rem;
+}
+footer {
+font-size: 0.75rem;
+}
 
-h1,h2{
-    font-size: 3.5rem;
-    font-weight: normal;
-    font-style: italic;
-    text-align: left;
+/* Type will scale with modules */
+h1 {
+font-size: 3em;
+
+}
+h2 {
+font-size: 2.5em;
+font-weight: normal;
+font-style: italic;
+text-align: left;
+}
+h3 {
+font-size: 2em;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.text-shadow{
+    text-shadow: $pink-heading-shadow;
 }
 
 .btn-primary{

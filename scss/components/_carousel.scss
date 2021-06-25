@@ -1,0 +1,58 @@
+#deliciasCarousel{
+    background-color: $pig-pink;
+
+    .carousel-control-next, .carousel-control-prev {
+        width: auto;
+    }
+  .card{
+      background-color: transparent;
+      background-clip: border-box;
+      padding: 1.5em;
+      border: 0;
+    .card-img-overlay{
+      top:30%;
+      color: $white;
+      font-family: $secondary-font;
+      font-size: 1.5em;
+      word-break: keep-all;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+      .col-md-3 {
+        width:20%;
+    }
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(20%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-20%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}

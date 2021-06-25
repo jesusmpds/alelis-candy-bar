@@ -63,21 +63,23 @@
     <main>
         <section id="hero">
             <div id="heroBackground" class="d-flex justify-content-center align-items-center">
-                <div class="container d-flex flex-column mb-5">
-                    <h1 class="visually-hidden">Alelis Pastelería consciente para festejar</h1>
-                    <img src="images/AlelisHero.svg" class="img-fluid" alt="Alelis pasteleria consciente">
-                    <div class="d-flex justify-content-evenly mt-5">
-                        <a class="btn btn-primary" href="#" role="button">Arma tu presupuesto</a>
-                        <a class="btn btn-primary" href="#" role="button">Mira nuestras delicicas</a>
+                <div class="container d-flex flex-column align-items-centermb-5">
+                    <div class="d-flex flex-column align-items-center">
+                        <h1 class="visually-hidden">Alelis Pastelería consciente para festejar</h1>
+                        <img src="images/AlelisHero.svg" class="" alt="Alelis pasteleria consciente">
+                    </div>
+                    <div class="d-flex justify-content-evenly flex-column flex-md-row mt-5 mb-5 mb-md-5">
+                        <a class="btn btn-primary mt-2" href="#" role="button">Arma tu presupuesto</a>
+                        <a class="btn btn-primary mt-2" href="#" role="button">Mira nuestras delicicas</a>
                     </div>
                 </div>
             </div>  
         </section>
-        <section id ="aboutUs" class="container">
-            <div class="row">
-                <div class="col-6">
+        <section id ="aboutUs" class="container mt-md-2">
+            <div class="row flex-column flex-md-row">
+                <div class="col-12 col-md-5 px-md-3">
                     <h2 class="mb-4">Sobre Alelis</h2>
-                    <p class="h2">
+                    <p class="h4">
                         Alelis es un negocio familiar,  que tiene por objetivo generar dulces recuerdos de una forma original, dándole a la fiesta un momento  único, dulce e irrepetible.
                     </p>
                     <p>
@@ -88,7 +90,7 @@
 
                     </p>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-7">
                     <div class="row">
                         <div class="col-6">
                             <div class="row mb-4">
@@ -98,13 +100,143 @@
                                 <img src="images/Sobre-Alelis-Img-2.svg">
                             </div>
                         </div>
-                        <div class="col-6 img--background-alelis">
-                            
+                        <div class="col-6">
+                            <img src="images/Sobre-Alelis-Img-3.svg">
                         </div>
                     </div>
                 </div>
             </div>
-            
+        </section>
+        <section id ="deliciasCarousel">
+            <div class="container">
+                <h2 class="mb-4 text-center text-white text-shadow">Conoce alguna de nuestras delicias</h2>
+                <div class="container text-center my-3">
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <!----------------------Carousel Items---------------------->
+                                <!----------------------First carousel group---------------------->
+                                <div class="carousel-item active">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Alfajores de maicena</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Box "colores"</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Budines</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Cakepops / Icepops</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Cookies</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Cupcakes"</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Oreopops</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Tartas</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Torta browni</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Tortas decoradas</div>
+                                            <a class="btn btn-primary mt-4" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
@@ -112,3 +244,79 @@
 </body>
 </html>
 
+<!--- <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 1</div>
+                                            <a class="btn btn-primary mt-2" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 2</div>
+                                            <a class="btn btn-primary mt-2" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 3</div>
+                                            <a class="btn btn-primary mt-2" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./images/placeholder.svg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 4</div>
+                                            <a class="btn btn-primary mt-2" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 5</div>
+                                            <a class="btn btn-primary mt-2" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="//via.placeholder.com/500x400/aba?text=6" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 6</div>
+                                            <a class="btn btn-primary mt-2" href="#" role="button">+ VER MÁS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>-->
