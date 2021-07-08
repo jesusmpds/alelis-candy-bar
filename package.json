@@ -4,6 +4,7 @@
   "description": "Bakery website",
   "main": "index.js",
   "private": true,
+  "type":"module",
   "scripts": {
   },
   "author": "Jesus M",
