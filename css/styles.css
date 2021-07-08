@@ -1,27 +1,53 @@
 html {
   scroll-behavior: smooth;
 }
-
-body {
-  font-size: 1.5rem;
+html body {
+  font-size: 16px;
   font-family: "Lato", sans-serif;
 }
-@media (max-width: 768px) {
-  body {
-    font-size: calc(0.80rem + 1vmin);
+@media screen and (max-width: 900px) {
+  html body {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  html body {
+    font-size: 14px;
   }
 }
 
-h1, h2 {
-  font-size: 3.5rem;
+/* Modules will scale with document */
+header {
+  font-size: 1.5rem;
+}
+
+footer {
+  font-size: 0.75rem;
+}
+
+/* Type will scale with modules */
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
   font-weight: normal;
   font-style: italic;
   text-align: left;
 }
 
+h3 {
+  font-size: 2em;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+.text-shadow {
+  text-shadow: 1px 2px #EB8BA2;
 }
 
 .btn-primary {
@@ -65,7 +91,17 @@ section#hero {
 }
 @media screen and (max-width: 1200px) {
   #heroBackground {
-    background-size: 1920px 1105px;
+    background-size: 1620px 905px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #heroBackground {
+    background-size: 1520px 805px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #heroBackground {
+    background-size: 1100px 660px;
   }
 }
 
@@ -140,6 +176,62 @@ section#hero {
     margin-right: 0.7rem;
     margin-bottom: 0.5rem;
   }
+}
+
+#deliciasCarousel {
+  background-color: #eb8ba2;
+}
+#deliciasCarousel .carousel-control-next, #deliciasCarousel .carousel-control-prev {
+  width: auto;
+}
+#deliciasCarousel .card {
+  background-color: transparent;
+  background-clip: border-box;
+  padding: 1.5em;
+  border: 0;
+}
+#deliciasCarousel .card .card-img-overlay {
+  top: 30%;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  word-break: keep-all;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .col-md-3 {
+    width: 20%;
+  }
+
+  .carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(20%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-20%);
+  }
+}
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
 }
 
 /*# sourceMappingURL=styles.css.map */
