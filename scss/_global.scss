@@ -4,35 +4,41 @@ html {
     font-size: 16px;
     font-family: $main-font;
     @media screen and (max-width: 900px) {
-         font-size: 15px;
+         font-size: 14px;
       }
-      @media screen and (max-width: 400px) {
-        font-size: 14px;
+    @media screen and (max-width: 400px) {
+    font-size: 13px;
+    }
+
+      section {
+          padding: 2em 0 2em;
       }
     }
 }
   
 /* Modules will scale with document */
 header {
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 footer {
-font-size: 0.75rem;
+    font-size: 0.75rem;
 }
 
 /* Type will scale with modules */
 h1 {
-font-size: 3em;
-
+    font-size: 3em;
 }
 h2 {
-font-size: 2.5em;
-font-weight: normal;
-font-style: italic;
-text-align: left;
+    font-size: 2.5em;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
 }
 h3 {
-font-size: 2em;
+    font-size: 2em;
+}
+h4{
+    font-size: 1.5em;
 }
 
 img {
@@ -51,22 +57,18 @@ img {
     padding: 16px 24px;
     text-decoration: none;
     box-shadow: $light-shadow;
-    transition: padding 0.5s ease-out;
 
     
     &:hover{
         background-color:$bluey-grey;
         border-color:$bluey-grey;
-        padding: 14px 20px;
         box-shadow: $light-shadow;
 
     }
     &:focus,&:active{
         background-color:$bluey-grey;
         border-color:$bluey-grey;
-        padding: 14px 20px;
         box-shadow: $light-shadow;
-
     }
 }
 
@@ -75,4 +77,50 @@ img {
 .img--background-alelis{
     background-image: url(../images/Sobre-Alelis-Img-3.svg);
     background-size: cover;
+}
+
+// Evento a celebrar section
+
+#tipoDeEvento{
+    background-color: $pig-pink;
+
+    .circle {
+        height: 150px;
+        width: 150px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+
+        @media screen and (max-width: 1200px) {
+            height: 130px;
+            width: 130px;
+         }
+        @media screen and (max-width: 900px) {
+            height: 115px;
+            width: 115px;
+         }
+        @media screen and (max-width: 400px) {
+            height: 57.5px;
+            width: 57.5px;
+
+        }
+        // &:hover{
+        //         position: absolute;
+        //         content: '';
+        //         height: calc(100% + 10px); 
+        //         width: calc(100% + 10px); 
+        //         border: 3px dashed orange;
+        //         top: -13px;
+        //         left: -13px;
+        //         border-radius: inherit;
+        //         animation: spin 10s linear infinite;
+              
+        //       @keyframes spin { 
+        //         100% { 
+        //           transform: rotateZ(360deg); 
+        //         }
+        //       }
+        // }
+    }
 }
